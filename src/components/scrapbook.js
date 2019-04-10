@@ -1,11 +1,12 @@
 import React from 'react';
 import './scrapbook.css';
-import game from './images/maxresdefault.jpg';
+import imageData from './image_data';
+import ScrapbookImage from './scrapbook_images';
 
 export default props=>{
     return (
         <div className='scrapbook-container'>
-            <img className='scrapbook-container' src={game}/>
+            <ScrapbookImage about={imageData[0]}/>
         </div>
     )
 }
